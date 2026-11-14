@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nazwa Aplikacji] – Bezpieczna nauka i zabawa dla dzieci</title>
+    <meta name="description" content="Interaktywna aplikacja edukacyjna dla dzieci. Bez agresywnych reklam, zgodna z Google Play dla rodzin i RODO.">
+    <style>
+        :root {
+            --primary: #4F46E5;
+            --primary-hover: #4338CA;
+            --secondary: #10B981;
+            --bg-light: #F8FAFC;
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --white: #FFFFFF;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Nawigacja */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #E2E8F0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        .nav-links a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #EEF2FF 0%, #FFFFFF 100%);
+        }
+        .badge {
+            display: inline-block;
+            background: #DCFCE7;
+            color: #166534;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+        .btn-google {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+            box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+        }
+        .btn-google:hover { background-color: var(--primary-hover); }
+        .micro-text {
+            display: block;
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Sekcje */
+        section { padding: 60px 0; }
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: var(--bg-light);
+            padding: 28px;
+            border-radius: 16px;
+            border: 1px solid #E2E8F0;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Strefa Rodzica */
+        .parent-zone {
+            background-color: #F0FDF4;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #BBF7D0;
+        }
+        .parent-zone h2 { color: #166534; margin-bottom: 15px; }
+        .parent-zone p { max-width: 700px; margin: 0 auto; color: #15803D; }
+
+        /* Stopka */
+        footer {
+            background: var(--text-dark);
+            color: #94A3B8;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover { text-decoration: underline; }
+        .legal-note {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #64748B;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">[Nazwa Aplikacji]</a>
+                <div class="nav-links">
+                    <a href="#funkcje">Funkcje</a>
+                    <a href="#bezpieczenstwo">Dla Rodziców</a>
+                    <a href="polityka-prywatnosci.html">Polityka Prywatności</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="badge">Zgodna z Google Play dla Rodzin</span>
+                <h1>Nauka przez zabawę w bezpiecznym świecie – poznaj [Nazwa Aplikacji]!</h1>
+                <p>Interaktywna aplikacja stworzona z myślą o rozwoju dzieci w wieku [np. 4–7 lat]. Zero agresywnych reklam, pełne bezpieczeństwo i mądra rozrywka zaakceptowana przez rodziców.</p>
+                <a href="[LINK_DO_SKLEPU_GOOGLE_PLAY]" class="btn-google" target="_blank" rel="noopener">Pobierz w Google Play</a>
+                <span class="micro-text">Dostępna na smartfony i tablety z systemem Android.</span>
+            </div>
+        </section>
+
+        <section id="funkcje">
+            <div class="container">
+                <h2 class="section-title">Dlaczego dzieci i rodzice uwielbiają naszą aplikację?</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Rozwój kluczowych umiejętności</h3>
+                        <p>Gry i zadania zaprojektowane tak, aby wspierać logiczne myślenie, spostrzegawczość, kreatywność oraz koordynację wzrokowo-ruchową.</p>
+                    </div>
+                    <div class="card">
+                        <h3>100% bezpieczeństwa</h3>
+                        <p>Brak nieodpowiednich treści oraz przypadkowych zakupów. Wszelkie ustawienia i płatności są chronione bramką rodzicielską (Parental Gate).</p>
+                    </div>
+                    <div class="card">
+                        <h3>Przyjazny interfejs i tryb offline</h3>
+                        <p>Intuicyjna obsługa dopasowana do małych rączek. Po pobraniu aplikacja działa bez dostępu do internetu – idealna w podróży.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bezpieczenstwo">
+            <div class="container">
+                <div class="parent-zone">
+                    <h2>Stworzona z troską o prywatność Twojego dziecka</h2>
+                    <p>Wiemy, jak ważne jest bezpieczeństwo najmłodszych w sieci. [Nazwa Aplikacji] spełnia rygorystyczne wymogi programu Google Play dla rodzin oraz przepisy RODO. Nie zbieramy danych osobowych dzieci i nie profilujemy ich zachowań.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                <a href="polityka-prywatnosci.html">Polityka Prywatności</a> | 
+                <a href="mailto:[TWOJ_EMAIL]">Kontakt: [TWOJ_EMAIL]</a>
+            </p>
+            <p style="margin-top: 15px;">&copy; 2026 [Nazwa Firmy / Imię i Nazwisko]. Wszelkie prawa zastrzeżone.</p>
+            <p class="legal-note">Google Play i logo Google Play są znakami towarowymi firmy Google LLC.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
