@@ -6,6 +6,12 @@
     <title>English Picture Dictionary for Kids</title>
     <meta name="description" content="">
     <style>
+        @font-face {
+            font-family: 'Soda Shake';
+            src: url('SodaShake.ttf') format('truetype'); /* Use 'fonts/SodaShake.ttf' if placed in a fonts folder */
+            font-weight: normal;
+            font-style: normal;
+        }
         :root {
             --primary: #4F46E5;
             --primary-hover: #4338CA;
@@ -68,7 +74,8 @@
             margin-bottom: 20px;
         }
         .hero h1 {
-            font-size: 2.5rem;
+            font-family: 'Soda Shake', sans-serif;
+            font-size: 2.0rem;
             line-height: 1.2;
             margin-bottom: 20px;
             color: var(--text-dark);
